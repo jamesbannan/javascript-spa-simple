@@ -30,3 +30,10 @@ jobs:
     - name: Run Tests
       run: npm test
 
+    - name: Upload error logs on failure
+      if: failure()
+      run: |
+        mkdir -p logs
+        cp -r ./*.log logs/ || true
+        echo "Logs captured for debugging."
+

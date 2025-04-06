@@ -24,7 +24,7 @@ test('Array contains specific element', () => {
 // Example test case 4: Check if an object has a specific property
 test('Object has specific property', () => {
     const obj = { name: 'James', age: 30 };
-    assert.ok(obj.hasOwnProperty('name'), 'Object should have a "name" property');
+    assert.ok(Object.prototype.hasOwnProperty.call(obj, 'name'), 'Object should have a "name" property');
 });
 
 // Example test case 5: Verify string starts with a specific prefix
