@@ -1,0 +1,7 @@
+{
+    "appService.showBuildDuringDeployPrompt": true,
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
