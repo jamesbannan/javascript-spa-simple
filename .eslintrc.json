@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true // Added for Node.js compatibility
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2021, // Updated to match ES2021
+    "sourceType": "module"
+  },
+  "rules": {
+    // Add custom rules here
+    "no-unused-vars": "warn", // Example: Warn on unused variables
+    "no-console": "off" // Example: Allow console statements
+  }
+}
