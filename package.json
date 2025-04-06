@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/main.js",
+  "type": "module",
   "scripts": {
     "build": "npm run clean && webpack --config ./webpack/webpack.config.js --env env=prod",
     "start": "webpack serve --config ./webpack/webpack.config.js --env env=dev --open",
     "clean": "rimraf dist",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "node --test"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.1",
-    "eslint": "^8.50.0"
+    "eslint": "^8.50.0",
+    "jsdom": "^22.1.0"
   }
 }
