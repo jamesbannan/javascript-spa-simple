@@ -1,4 +1,4 @@
-import { router } from "./router/index.routes";
+import { router } from "./router/index.routes.js";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./sass/main.scss";
